@@ -60,6 +60,9 @@ def delete_contact(user_id):
     return jsonify({"message":"User deleted"}),200
 
 
+@app.route("/")
+def home():
+    return "Backend is running!"
 
 
 if __name__=="__main__":
